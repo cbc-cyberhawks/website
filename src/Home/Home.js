@@ -4,16 +4,16 @@ import './Home.css';
 import NavbarCustom from '../NavbarCustom/NavbarCustom';
 
 class Home extends React.Component {
-  constructor(props) {
+  constructor (props) {
     super(props);
     this.state = {
     };
   }
 
-  render() {
+  render () {
     return (
       <div className='Home'>
-        <NavbarCustom Text="Home" Route="/home" />
+        <NavbarCustom Text='Home' Route='/home' />
         <Jumbotron>
           <h1>Hello, world!</h1>
           <p>
@@ -21,7 +21,7 @@ class Home extends React.Component {
             extra attention to featured content or information.
           </p>
           <p>
-            <Button variant="dark">Learn more</Button>
+            <Button variant='dark'>Learn more</Button>
           </p>
         </Jumbotron>
       </div>

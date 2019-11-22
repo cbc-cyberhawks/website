@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from './Home/Home'
+import Home from './Home/Home';
 import {
   BrowserRouter as Router,
   Switch,
@@ -8,13 +8,13 @@ import {
 import './App.css';
 
 class App extends React.Component {
-  constructor(props) {
+  constructor (props) {
     super(props);
     this.state = {
     };
   }
 
-  render() {
+  render () {
     return (
       <Router>
         <Switch>
