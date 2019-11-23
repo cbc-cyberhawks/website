@@ -20,15 +20,3 @@
 .Home-link {
   color: #09d3ac;
 }
-
-.overlay {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  background-color: rgba(0,0,0,0.5);
-  color: white;
-  text-shadow: 0px 0px 10px black;
-  height: 800px;
-  text-align: center;
-  font-size: larger;
-}
