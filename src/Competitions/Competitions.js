@@ -1,10 +1,16 @@
 import React from 'react';
-import { ActivityTimeline, TimelineMarker } from 'react-rainbow-components';
 import HorizontalTimeline from 'react-horizontal-timeline';
 import './Competitions.css';
 import NavbarCustom from '../NavbarCustom/NavbarCustom';
 
-const VALUES = [new Date('November 8, 2019'), new Date('November 16, 2019')];
+const VALUES = [
+  '11/14/2019',
+  '11/16/2019',
+  '3/22/2020',
+  '3/23/2020',
+  '8/15/2020',
+  '11/16/2020'
+];
 
 class Competitions extends React.Component {
   constructor (props) {
@@ -15,15 +21,37 @@ class Competitions extends React.Component {
   }
 
   render () {
+    let event = '';
+    switch (this.state.value) {
+      case 0:
+        event = 'CyberForce 2019';
+        break;
+      case 1:
+        event = 'NCL Fall Season';
+        break;
+      case 2:
+        event = 'PRCCDC 2020';
+        break;
+      case 3:
+        event = 'NCL Spring Season';
+        break;
+      case 4:
+        event = 'Panopoly';
+        break;
+      default:
+        event = '';
+        break;
+    }
     return (
       <div className='Competitions'>
         <NavbarCustom activeTab='/competitions' />
         <br />
         <br />
-        <div style={{ width: '60%', height: '100px', margin: '0 auto' }}>
+        <div className='timeline'>
           <HorizontalTimeline
-
+            labelWidth={150}
             index={this.state.value}
+            styles={{ background: 'white', outline: '#c0c0c0', foreground: '#2E57A1' }}
             indexClick={(index) => {
               this.setState({ value: index, previous: this.state.value });
             }}
@@ -31,17 +59,9 @@ class Competitions extends React.Component {
           />
         </div>
         <div className='text-center'>
+          <h1>{event}</h1>
+          <br />
           {this.state.value}
-        </div>
-        <div id='timeline'>
-          <ActivityTimeline>
-            <TimelineMarker
-              label='User Sign Up.'
-              icon=' '
-              datetime='Yesterday'
-              description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.'
-            />
-          </ActivityTimeline>
         </div>
       </div>
     );

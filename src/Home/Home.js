@@ -15,7 +15,7 @@ class Home extends React.Component {
   render () {
     const carouselProps = {
       imageChangeInterval: 15000,
-      height: 9,
+      height: 3.25,
       images: [
         {
           headline: 'Columbia Basin College',
@@ -38,20 +38,28 @@ class Home extends React.Component {
       <div className='Home'>
         <NavbarCustom activeTab='/home' />
         <Carousel {...carouselProps} />
-        <div className='overlay'>
-          <h1>Columbia Basin College's</h1>
-        </div>
         <Jumbotron>
           <h1>Welcome to the CBC Cyberhawks.</h1>
           <p>
-            An elite cybersecuirty team, we come from a small school but have big ambitions.
+            An elite cybersecurity team, we come from a small school but have big ambitions.
             <br />
-            We regularly <Link to='/awards'>attend and place</Link> at nationally ranked Cybersecurity competitions.
+            We regularly <Link to='/awards'>attend and place</Link> at nationally ranked cybersecurity competitions.
             <br />
             <b>Interested?</b> Click the button below.
           </p>
           <p>
-            <Nav.Link target='_blank' href='https://discord.gg/XBgxUnc'><Button variant='outline-dark'>Join the Discord</Button></Nav.Link>
+            <Nav.Link target='_blank' href='https://discord.gg/XBgxUnc'><Button size='lg' variant='dark'>Join the Discord</Button></Nav.Link>
+          </p>
+        </Jumbotron>
+        <hr />
+        <br />
+        <Jumbotron>
+          <h2>About Columbia Basin College</h2>
+          <p>
+          Columbia Basin College (CBC) is a community college with a campus located in Pasco, Washington.
+          </p>
+          <p>
+            <Nav.Link target='_blank' href='https://www.columbiabasin.edu/'><Button size='lg' variant='primary'>Website</Button></Nav.Link>
           </p>
         </Jumbotron>
       </div>
