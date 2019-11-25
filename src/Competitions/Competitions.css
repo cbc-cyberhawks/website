@@ -1,12 +1,11 @@
-.Home {
-  text-align: center;
+.Competitions {
 }
 
-.Home-logo {
+.Competitions-logo {
   height: 20vmin;
 }
 
-.Home-header {
+.Competitions-header {
   background-color: #323639;
   min-height: 100vh;
   display: flex;
@@ -17,10 +16,14 @@
   color: white;
 }
 
-.Home-link {
+.Competitions-link {
   color: #09d3ac;
 }
 
-.jumbotron {
-  background-color: white;
+.timeline {
+  font-size: 20px;
+  width: 85%;
+  height: 125px;
+  margin: auto;
+  margin-top: 15%;
 }
