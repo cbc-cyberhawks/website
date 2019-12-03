@@ -1,5 +1,5 @@
 import React from 'react';
-import { Jumbotron, Button, Nav } from 'react-bootstrap';
+import { Jumbotron, Button, Nav, Navbar } from 'react-bootstrap';
 import Carousel from '@bit/limio.landing.carousel';
 import { Link } from 'react-router-dom';
 import './Home.css';
@@ -52,16 +52,12 @@ class Home extends React.Component {
           </p>
         </Jumbotron>
         <hr />
-        <br />
-        <Jumbotron>
-          <h2>About Columbia Basin College</h2>
-          <p>
-          Columbia Basin College (CBC) is a community college with a campus located in Pasco, Washington.
+        <Navbar fixed='bottom' bg='dark' variant='dark'>
+          <p>About Columbia Basin College
+            Columbia Basin College (CBC) is a community college with a campus located in Pasco, Washington.
           </p>
-          <p>
-            <Nav.Link target='_blank' href='https://www.columbiabasin.edu/'><Button size='lg' variant='primary'>Website</Button></Nav.Link>
-          </p>
-        </Jumbotron>
+          <Nav.Link target='_blank' href='https://www.columbiabasin.edu/'><Button size='lg' variant='primary'>Website</Button></Nav.Link>
+        </Navbar>
       </div>
     );
   }

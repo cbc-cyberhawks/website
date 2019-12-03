@@ -1,26 +1,13 @@
-.Competitions-logo {
-  height: 20vmin;
-}
-
-.Competitions-header {
-  background-color: #323639;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.Competitions-link {
-  color: #09d3ac;
-}
-
 .timeline {
   font-size: 20px;
   width: 85%;
   height: 125px;
   margin: auto;
-  margin-top: 15%;
+  margin-top: 7%;
+}
+
+.event {
+  text-align: center;
+  margin-left: 15%;
+  margin-right: 15%;
 }

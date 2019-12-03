@@ -12,6 +12,15 @@ const VALUES = [
   '11/16/2020'
 ];
 
+const EVENTS = [
+  { title: 'CyberForce 2019', description: 'The CyberForce Competition is a cyber workforce development competition that focuses on the defensive/hardening nature of energy cyber infrastructure.' },
+  { title: 'NCL Fall Season', description: 'The National Cyber League (NCL) is a biannual cybersecurity competition for high school and college students. The competition consists of a series of challenges that allows students to demonstrate their ability to identify hackers from forensic data, break into vulnerable websites, recover from ransomware attacks, and more. Students compete in the NCL to build their skills, obtain scouting reports of their performance for hiring purposes, and to represent their school. ' },
+  { title: 'PRCCDC 2020', description: 'testing' },
+  { title: 'NCL Spring Season', description: 'The National Cyber League (NCL) is a biannual cybersecurity competition for high school and college students. The competition consists of a series of challenges that allows students to demonstrate their ability to identify hackers from forensic data, break into vulnerable websites, recover from ransomware attacks, and more. Students compete in the NCL to build their skills, obtain scouting reports of their performance for hiring purposes, and to represent their school. ' },
+  { title: 'Panopoly', description: 'testing' },
+  { title: 'CyberForce 2020', description: 'The CyberForce Competition is a cyber workforce development competition that focuses on the defensive/hardening nature of energy cyber infrastructure.' }
+];
+
 class Competitions extends React.Component {
   constructor (props) {
     super(props);
@@ -21,32 +30,10 @@ class Competitions extends React.Component {
   }
 
   render () {
-    let event = '';
-    switch (this.state.value) {
-      case 0:
-        event = 'CyberForce 2019';
-        break;
-      case 1:
-        event = 'NCL Fall Season';
-        break;
-      case 2:
-        event = 'PRCCDC 2020';
-        break;
-      case 3:
-        event = 'NCL Spring Season';
-        break;
-      case 4:
-        event = 'Panopoly';
-        break;
-      default:
-        event = '';
-        break;
-    }
+    const currentEvent = EVENTS[this.state.value];
     return (
       <div className='Competitions'>
         <NavbarCustom activeTab='/competitions' />
-        <br />
-        <br />
         <div className='timeline'>
           <HorizontalTimeline
             labelWidth={150}
@@ -58,10 +45,9 @@ class Competitions extends React.Component {
             values={VALUES}
           />
         </div>
-        <div className='text-center'>
-          <h1>{event}</h1>
-          <br />
-          {this.state.value}
+        <div className='event'>
+          <h1>{currentEvent.title}</h1>
+          <p>{currentEvent.description}</p>
         </div>
       </div>
     );
