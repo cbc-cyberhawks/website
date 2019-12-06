@@ -24,3 +24,11 @@
 .jumbotron {
   background-color: white;
 }
+
+.welcome {
+  margin-top: 0;
+}
+
+.in-text-link:hover {
+  color: #0056b3;
+}

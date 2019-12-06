@@ -1,6 +1,7 @@
 import React from 'react';
 import './NavbarCustom.css';
 import { Navbar, Nav } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import discord from './Discord-Logo-White.png';
 import github from './github-icon-white-6.jpg';
 import logo from './logo.png';
@@ -20,9 +21,9 @@ function NavbarCustom ({ activeTab }) {
         </Navbar.Brand>
         <Navbar.Brand>Cyberhawks</Navbar.Brand>
         <Nav activeKey={activeTab} className='mr-auto'>
-          <Nav.Link href='/home'>Home</Nav.Link>
-          <Nav.Link href='/competitions'>Competitions</Nav.Link>
-          <Nav.Link href='/awards'>Awards</Nav.Link>
+          <Nav.Link><Link to='/home' className='menu'>Home</Link></Nav.Link>
+          <Nav.Link><Link to='/competitions' className='menu'>Competitions</Link></Nav.Link>
+          <Nav.Link><Link to='/awards' className='menu'>Awards</Link></Nav.Link>
         </Nav>
         <Nav>
           <Nav.Link target='_blank' href='https://discord.gg/XBgxUnc'>
@@ -34,7 +35,7 @@ function NavbarCustom ({ activeTab }) {
               src={discord}
             />
           </Nav.Link>
-          <Nav.Link target='_blank' href='https://github.com/fordepowers/cyberhawks-website'>
+          <Nav.Link target='_blank' href='https://github.com/cbc-cyberhawks/cbc-cyberhawks.github.io'>
             <img
               alt=''
               height='35'

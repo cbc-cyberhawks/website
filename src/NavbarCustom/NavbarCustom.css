@@ -1,4 +1,12 @@
-.menu-button {
-    margin-left: 10px;
-    margin-right: 10px;
+.menu {
+    color: rgba(255, 255, 255, .5);
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: rgba(255, 255, 255, 1);
 }

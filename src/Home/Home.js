@@ -1,5 +1,5 @@
 import React from 'react';
-import { Jumbotron, Button, Nav, Navbar } from 'react-bootstrap';
+import { Jumbotron, Button, Nav } from 'react-bootstrap';
 import Carousel from '@bit/limio.landing.carousel';
 import { Link } from 'react-router-dom';
 import './Home.css';
@@ -39,11 +39,11 @@ class Home extends React.Component {
         <NavbarCustom activeTab='/home' />
         <Carousel {...carouselProps} />
         <Jumbotron>
-          <h1>Welcome to the CBC Cyberhawks.</h1>
+          <h1 className='welcome'>Welcome to the CBC Cyberhawks.</h1>
           <p>
             An elite cybersecurity team, we come from a small school but have big ambitions.
             <br />
-            We regularly <Link to='/awards'>attend and place</Link> at nationally ranked cybersecurity competitions.
+            We regularly <Link to='/awards' className='in-text-link'>attend and place</Link> at nationally ranked cybersecurity competitions.
             <br />
             <b>Interested?</b> Click the button below.
           </p>
@@ -51,13 +51,6 @@ class Home extends React.Component {
             <Nav.Link target='_blank' href='https://discord.gg/XBgxUnc'><Button size='lg' variant='dark'>Join the Discord</Button></Nav.Link>
           </p>
         </Jumbotron>
-        <hr />
-        <Navbar fixed='bottom' bg='dark' variant='dark'>
-          <p>About Columbia Basin College
-            Columbia Basin College (CBC) is a community college with a campus located in Pasco, Washington.
-          </p>
-          <Nav.Link target='_blank' href='https://www.columbiabasin.edu/'><Button size='lg' variant='primary'>Website</Button></Nav.Link>
-        </Navbar>
       </div>
     );
   }

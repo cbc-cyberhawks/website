@@ -1,13 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+
 .timeline {
   font-size: 20px;
   width: 85%;
   height: 125px;
   margin: auto;
-  margin-top: 7%;
+  margin-top: 30px;
 }
 
 .event {
   text-align: center;
   margin-left: 15%;
   margin-right: 15%;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 80px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 4.5em;
+}
+
+h2 {
+  font-weight: 600;
+  color: #2E57A1;
+}
+
+.logo {
+  width: 50vmin;
+  padding: 1%;
+  margin-bottom: 20px;
 }

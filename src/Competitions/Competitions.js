@@ -2,24 +2,7 @@ import React from 'react';
 import HorizontalTimeline from 'react-horizontal-timeline';
 import './Competitions.css';
 import NavbarCustom from '../NavbarCustom/NavbarCustom';
-
-const VALUES = [
-  '11/14/2019',
-  '11/16/2019',
-  '3/22/2020',
-  '3/23/2020',
-  '8/15/2020',
-  '11/16/2020'
-];
-
-const EVENTS = [
-  { title: 'CyberForce 2019', description: 'The CyberForce Competition is a cyber workforce development competition that focuses on the defensive/hardening nature of energy cyber infrastructure.' },
-  { title: 'NCL Fall Season', description: 'The National Cyber League (NCL) is a biannual cybersecurity competition for high school and college students. The competition consists of a series of challenges that allows students to demonstrate their ability to identify hackers from forensic data, break into vulnerable websites, recover from ransomware attacks, and more. Students compete in the NCL to build their skills, obtain scouting reports of their performance for hiring purposes, and to represent their school. ' },
-  { title: 'PRCCDC 2020', description: 'testing' },
-  { title: 'NCL Spring Season', description: 'The National Cyber League (NCL) is a biannual cybersecurity competition for high school and college students. The competition consists of a series of challenges that allows students to demonstrate their ability to identify hackers from forensic data, break into vulnerable websites, recover from ransomware attacks, and more. Students compete in the NCL to build their skills, obtain scouting reports of their performance for hiring purposes, and to represent their school. ' },
-  { title: 'Panopoly', description: 'testing' },
-  { title: 'CyberForce 2020', description: 'The CyberForce Competition is a cyber workforce development competition that focuses on the defensive/hardening nature of energy cyber infrastructure.' }
-];
+import EVENTS from './events';
 
 class Competitions extends React.Component {
   constructor (props) {
@@ -30,10 +13,15 @@ class Competitions extends React.Component {
   }
 
   render () {
+    const dates = [];
+    EVENTS.forEach(event => {
+      dates.push(event.date);
+    });
     const currentEvent = EVENTS[this.state.value];
     return (
       <div className='Competitions'>
         <NavbarCustom activeTab='/competitions' />
+        <h1>Competitions</h1>
         <div className='timeline'>
           <HorizontalTimeline
             labelWidth={150}
@@ -42,12 +30,13 @@ class Competitions extends React.Component {
             indexClick={(index) => {
               this.setState({ value: index, previous: this.state.value });
             }}
-            values={VALUES}
+            values={dates}
           />
         </div>
         <div className='event'>
-          <h1>{currentEvent.title}</h1>
+          <h2>{currentEvent.title}</h2>
           <p>{currentEvent.description}</p>
+          <img className='logo' alt='event' src={currentEvent.image} />
         </div>
       </div>
     );

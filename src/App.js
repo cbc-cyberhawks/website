@@ -3,7 +3,7 @@ import Home from './Home/Home';
 import Competitions from './Competitions/Competitions';
 import Awards from './Awards/Awards';
 import {
-  BrowserRouter as Router,
+  HashRouter,
   Switch,
   Route
 } from 'react-router-dom';
@@ -18,14 +18,14 @@ class App extends React.Component {
 
   render () {
     return (
-      <Router>
+      <HashRouter basename='/'>
         <Switch>
-          <Route exact path='/' component={Home} />
+          <Route exact path='/home' component={Home} />
           <Route exact path='/competitions' component={Competitions} />
           <Route exact path='/awards' component={Awards} />
           <Route path='/' component={Home} />
         </Switch>
-      </Router>
+      </HashRouter>
     );
   }
 }
