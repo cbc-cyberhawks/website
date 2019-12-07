@@ -6,7 +6,7 @@ import discord from './Discord-Logo-White.png';
 import github from './github-icon-white-6.jpg';
 import logo from './logo.png';
 
-function NavbarCustom ({ activeTab }) {
+function NavbarCustom({ activeTab }) {
   return (
     <div>
       <Navbar fixed='top' className='justify-content-between' bg='dark' variant='dark'>
@@ -21,9 +21,9 @@ function NavbarCustom ({ activeTab }) {
         </Navbar.Brand>
         <Navbar.Brand>Cyberhawks</Navbar.Brand>
         <Nav activeKey={activeTab} className='mr-auto'>
-          <Nav.Link><Link to='/home' className='menu'>Home</Link></Nav.Link>
-          <Nav.Link><Link to='/competitions' className='menu'>Competitions</Link></Nav.Link>
-          <Nav.Link><Link to='/awards' className='menu'>Awards</Link></Nav.Link>
+          <Nav.Link><Link to='/home' className={activeTab === '/home' ? 'menu-active' : 'menu'}>Home</Link></Nav.Link>
+          <Nav.Link><Link to='/competitions' className={activeTab === '/competitions' ? 'menu-active' : 'menu'}>Competitions</Link></Nav.Link>
+          <Nav.Link><Link to='/awards' className={activeTab === '/awards' ? 'menu-active' : 'menu'}>Awards</Link></Nav.Link>
         </Nav>
         <Nav>
           <Nav.Link target='_blank' href='https://discord.gg/XBgxUnc'>
