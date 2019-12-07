@@ -6,7 +6,7 @@ import discord from './Discord-Logo-White.png';
 import github from './github-icon-white-6.jpg';
 import logo from './logo.png';
 
-function NavbarCustom({ activeTab }) {
+function NavbarCustom ({ activeTab }) {
   return (
     <div>
       <Navbar fixed='top' className='justify-content-between' bg='dark' variant='dark'>
