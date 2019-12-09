@@ -27,7 +27,6 @@ class Home extends React.Component {
                   <br />
                   We regularly <Link to='/awards' className='in-text-link'>attend and place</Link> at nationally ranked cybersecurity competitions.
                   <br />
-                  <b>Interested?</b> Click the button below.
                 </p>
                 <p>
                   <Nav.Link target='_blank' href='https://discord.gg/XBgxUnc'><Button size='lg' variant='dark'>Join the Discord</Button></Nav.Link>

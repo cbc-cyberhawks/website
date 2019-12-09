@@ -44,6 +44,13 @@ function NavbarCustom ({ activeTab }) {
               src={github}
             />
           </Nav.Link>
+          <img
+            alt=''
+            height='35'
+            width='35'
+            className='icon'
+            src='https://static.thenounproject.com/png/547164-200.png'
+          />
         </Nav>
       </Navbar>
     </div>
