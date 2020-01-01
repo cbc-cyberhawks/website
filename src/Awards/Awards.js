@@ -5,13 +5,13 @@ import NavbarCustom from '../NavbarCustom/NavbarCustom';
 import cyberforce from './doe-cyberforce-competition-2019_49076116333_o.jpg';
 
 class Awards extends React.Component {
-  constructor(props) {
+  constructor (props) {
     super(props);
     this.state = {
     };
   }
 
-  render() {
+  render () {
     return (
       <div className='Awards'>
         <NavbarCustom activeTab='/awards' />
