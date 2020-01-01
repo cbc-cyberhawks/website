@@ -4,7 +4,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@bit/limio.landing.carousel": "^1.0.9",
     "bootstrap": "^4.3.1",
     "eslint-config-standard": "^13.0.1",
     "jquery": "^3.4.1",
@@ -20,7 +19,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "npx gh-pages -d build -b master",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "npx semistandard --fix",
@@ -42,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^2.1.1",
     "husky": "^3.1.0"
   },
   "husky": {
