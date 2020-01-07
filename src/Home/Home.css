@@ -1,0 +1,45 @@
+.Home {
+  text-align: center;
+}
+
+.Home-logo {
+  height: 20vmin;
+}
+
+.Home-header {
+  background-color: #323639;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Home-link {
+  color: #09d3ac;
+}
+
+.jumbotron {
+  background-color: white;
+}
+
+.welcome {
+  margin-top: 20rem;
+  text-shadow: 0px 0px 10px black, 1px 1px 1em black, 0 0 0.2em black;
+}
+
+.welcome-text {
+  text-shadow: 0px 0px 10px black, 1px 1px 1em black, 0 0 0.2em black;
+  font-size: x-large;
+  font-weight: 550;
+}
+
+button {
+  box-shadow: 0px 0px 10px black, 1px 1px 1em black, 0 0 0.2em black;
+}
+
+.in-text-link:hover {
+  color: #0056b3;
+}
