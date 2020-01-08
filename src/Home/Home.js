@@ -13,22 +13,16 @@ class Home extends React.Component {
 
   render () {
     return (
-      <div className='Home'>
+      <div className='Home' style={{ backgroundImage: 'tanner.jpg' }}>
         <NavbarCustom activeTab='/home' />
-        <Card className='bg-dark text-white' style={{ marginTop: '64px', height: '80vh' }}>
-          <Card.Img src={picture} alt='Card image' />
+        <Card className='bg-dark text-white imgbox'>
+          <Card.Img src={picture} alt='Card image' className='background' />
           <Card.ImgOverlay>
-            <div>
-              <Card.Title><h1 className='welcome'>Columbia Basin College Cyberhawks</h1></Card.Title>
-              <Card.Text>
-                <p className='welcome-text'>
-                  Meetings, competitions, and professional speakers.
-                </p>
-                <p>
-                  <Nav.Link target='_blank' href='https://discord.gg/XBgxUnc'><Button size='lg' variant='dark'>Discord</Button></Nav.Link>
-                </p>
-              </Card.Text>
-            </div>
+            <Card.Title><h1 className='welcome'>Columbia Basin College Cyberhawks</h1></Card.Title>
+            <Card.Text className='welcome-text'>
+              Meetings, competitions, and professional speakers.
+            </Card.Text>
+            <Nav.Link target='_blank' href='https://discord.gg/XBgxUnc'><Button size='lg' variant='dark'>Discord</Button></Nav.Link>
           </Card.ImgOverlay>
         </Card>
       </div>

@@ -1,5 +1,6 @@
 .Home {
   text-align: center;
+  background-image: url('tanner.jpg');
 }
 
 .Home-logo {
@@ -32,14 +33,30 @@
 
 .welcome-text {
   text-shadow: 0px 0px 10px black, 1px 1px 1em black, 0 0 0.2em black;
-  font-size: x-large;
+  font-size: xx-large;
   font-weight: 550;
+  margin-bottom: 15px;
 }
 
 button {
   box-shadow: 0px 0px 10px black, 1px 1px 1em black, 0 0 0.2em black;
 }
 
-.in-text-link:hover {
-  color: #0056b3;
+.background {
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+  max-height: 100%;
+  max-width: 100%;
+  animation-name: background;
+  animation-duration: 4s;
+}
+
+@keyframes background {
+  from {
+    filter: brightness(5%);
+  }
+  to {
+    filter: brightness(100%);
+  }
 }
