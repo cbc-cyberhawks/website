@@ -1,6 +1,6 @@
 import React from 'react';
 import './NavbarCustom.css';
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import discord from './Discord-Logo-White.png';
 import github from './github-icon-white-6.jpg';
@@ -10,6 +10,7 @@ function NavbarCustom ({ activeTab }) {
   return (
     <div>
       <Navbar fixed='top' className='justify-content-between' bg='dark' variant='dark'>
+        <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Brand>
           <img
             alt=''
@@ -44,13 +45,14 @@ function NavbarCustom ({ activeTab }) {
               src={github}
             />
           </Nav.Link>
-          <img
-            alt=''
-            height='35'
-            width='35'
-            className='icon'
-            src='https://static.thenounproject.com/png/547164-200.png'
-          />
+          <NavDropdown drop='left' title='Menu' className='mobileMenu'>
+            <NavDropdown.Item><Nav.Link><Link to='/home' className={activeTab === '/home' ? 'menu-active mobile' : 'menu mobile'}>Home</Link></Nav.Link></NavDropdown.Item>
+            <NavDropdown.Item><Nav.Link><Link to='/competitions' className={activeTab === '/competitions' ? 'menu-active mobile' : 'menu mobile'}>Competitions</Link></Nav.Link></NavDropdown.Item>
+            <NavDropdown.Item><Nav.Link><Link to='/awards' className={activeTab === '/awards' ? 'menu-active mobile' : 'menu mobile'}>Awards</Link></Nav.Link></NavDropdown.Item>
+            <NavDropdown.Divider />
+            <NavDropdown.Item><a rel="noopener noreferrer" target='_blank' href='https://discord.gg/XBgxUnc' className='menu-active mobile'>Discord</a></NavDropdown.Item>
+            <NavDropdown.Item><a rel="noopener noreferrer" target='_blank' href='https://github.com/cbc-cyberhawks/website' className='menu-active mobile'>Github</a></NavDropdown.Item>
+          </NavDropdown>
         </Nav>
       </Navbar>
     </div>

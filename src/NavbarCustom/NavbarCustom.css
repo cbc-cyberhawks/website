@@ -3,7 +3,15 @@
     text-decoration: none;
 }
 
-.icon {
+.mobile {
+    color: rgb(122, 122, 122);
+}
+
+.menu-active.mobile {
+    color: black;
+}
+
+.mobileMenu {
     display: none;
 }
 
@@ -19,7 +27,7 @@ a:hover, a:active, .menu-active {
     .nav-link {
         display: none;
     }
-    .icon {
-        display: block;
+    .mobileMenu.nav-item.dropleft {
+        display: inline;
     }
 }
