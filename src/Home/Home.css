@@ -1,53 +1,15 @@
 .Home {
   text-align: center;
-  background-image: url('tanner.jpg');
 }
 
-.Home-logo {
-  height: 20vmin;
-}
-
-.Home-header {
-  background-color: #323639;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.Home-link {
-  color: #09d3ac;
-}
-
-.jumbotron {
-  background-color: white;
-}
-
-.welcome {
-  margin-top: 20rem;
+.card-img-overlay {
+  margin-top: 67px;
   text-shadow: 0px 0px 10px black, 1px 1px 1em black, 0 0 0.2em black;
 }
 
-.welcome-text {
-  text-shadow: 0px 0px 10px black, 1px 1px 1em black, 0 0 0.2em black;
-  font-size: xx-large;
-  font-weight: 550;
-  margin-bottom: 15px;
-}
-
-button {
-  box-shadow: 0px 0px 10px black, 1px 1px 1em black, 0 0 0.2em black;
-}
 
 .background {
-  padding: 0;
-  display: block;
-  margin: 0 auto;
-  max-height: 100%;
-  max-width: 100%;
+  margin-top: 67px;
   animation-name: background;
   animation-duration: 4s;
 }
@@ -60,3 +22,5 @@ button {
     filter: brightness(100%);
   }
 }
+
+@media screen and (max-width: 570px) {}

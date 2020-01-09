@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Nav, Card } from 'react-bootstrap';
+import { Button, Card } from 'react-bootstrap';
 import './Home.css';
 import picture from './tanner.jpg';
 import NavbarCustom from '../NavbarCustom/NavbarCustom';
@@ -13,16 +13,14 @@ class Home extends React.Component {
 
   render () {
     return (
-      <div className='Home' style={{ backgroundImage: 'tanner.jpg' }}>
+      <div className='Home'>
         <NavbarCustom activeTab='/home' />
-        <Card className='bg-dark text-white imgbox'>
+        <Card className='text-center bg-dark text-white imgbox'>
           <Card.Img src={picture} alt='Card image' className='background' />
           <Card.ImgOverlay>
-            <Card.Title><h1 className='welcome'>Columbia Basin College Cyberhawks</h1></Card.Title>
-            <Card.Text className='welcome-text'>
-              Meetings, competitions, and professional speakers.
-            </Card.Text>
-            <Nav.Link target='_blank' href='https://discord.gg/XBgxUnc'><Button size='lg' variant='dark'>Discord</Button></Nav.Link>
+            <Card.Title>Columbia Basin College Cyberhawks</Card.Title>
+            <Card.Text>Meetings, competitions, and professional speakers.</Card.Text>
+            <Button size='lg' href='https://discord.gg/XBgxUnc' variant='dark'>Discord</Button>
           </Card.ImgOverlay>
         </Card>
       </div>

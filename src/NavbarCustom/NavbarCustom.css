@@ -3,15 +3,7 @@
     text-decoration: none;
 }
 
-.mobile {
-    color: rgb(122, 122, 122);
-}
-
-.menu-active.mobile {
-    color: black;
-}
-
-.mobileMenu {
+.dropdown-toggle.nav-link {
     display: none;
 }
 
@@ -24,10 +16,13 @@ a:hover, a:active, .menu-active {
 }
 
 @media screen and (max-width: 570px) {
-    .nav-link {
-        display: none;
-    }
-    .mobileMenu.nav-item.dropleft {
+    .dropdown-toggle.nav-link {
         display: inline;
+    }
+    .mobile {
+        color: rgb(122, 122, 122);
+    }
+    .menu-active.mobile {
+        color: black;
     }
 }
