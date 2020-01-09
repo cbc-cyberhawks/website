@@ -16,7 +16,7 @@ class Home extends React.Component {
       <div className='Home'>
         <NavbarCustom activeTab='/home' />
         <Card className='text-center bg-dark text-white imgbox'>
-          <Card.Img src={picture} alt='Card image' className='background' />
+          <img alt='tanner' src={picture} className='bg' />
           <Card.ImgOverlay>
             <Card.Title>Columbia Basin College Cyberhawks</Card.Title>
             <Card.Text>Meetings, competitions, and professional speakers.</Card.Text>

@@ -1,3 +1,29 @@
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  animation-name: background;
+  animation-duration: 4s;
+  filter: brightness(70%);
+}
+
+@media screen and (max-width: 824px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
+
 .Home {
   text-align: center;
 }
@@ -7,20 +33,11 @@
   text-shadow: 0px 0px 10px black, 1px 1px 1em black, 0 0 0.2em black;
 }
 
-
-.background {
-  margin-top: 67px;
-  animation-name: background;
-  animation-duration: 4s;
-}
-
 @keyframes background {
   from {
-    filter: brightness(5%);
+    filter: brightness(0%);
   }
   to {
-    filter: brightness(100%);
+    filter: brightness(70%);
   }
 }
-
-@media screen and (max-width: 570px) {}

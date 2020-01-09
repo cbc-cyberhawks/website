@@ -35,7 +35,7 @@ function NavbarCustom ({ activeTab }) {
           {!mobile
             ? <Nav.Link target='_blank' href='https://discord.gg/XBgxUnc'>
               <img
-                alt=''
+                alt='Discord'
                 height='35'
                 width='35'
                 className='d-inline-block align-top'
@@ -45,9 +45,9 @@ function NavbarCustom ({ activeTab }) {
             : null}
           {
             !mobile
-              ? <Nav.Link target='_blank' href='https://github.com/cbc-cyberhawks/cbc-cyberhawks.github.io'>
+              ? <Nav.Link target='_blank' href='https://github.com/cbc-cyberhawks/website'>
                 <img
-                  alt=''
+                  alt='Github'
                   height='35'
                   width='35'
                   className='d-inline-block align-top'
