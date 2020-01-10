@@ -1,45 +1,54 @@
+h1 {
+  text-align: center;
+  margin-top: 80px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 4.5em;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  animation-name: background;
+  animation-duration: 4s;
+  filter: brightness(50%);
+}
+
+@media screen and (max-width: 824px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
+}
+
 .Home {
   text-align: center;
 }
 
-.Home-logo {
-  height: 20vmin;
-}
-
-.Home-header {
-  background-color: #323639;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.Home-link {
-  color: #09d3ac;
-}
-
-.jumbotron {
-  background-color: white;
-}
-
-.welcome {
-  margin-top: 20rem;
+.card-img-overlay {
+  margin-top: 67px;
   text-shadow: 0px 0px 10px black, 1px 1px 1em black, 0 0 0.2em black;
 }
 
-.welcome-text {
-  text-shadow: 0px 0px 10px black, 1px 1px 1em black, 0 0 0.2em black;
-  font-size: x-large;
-  font-weight: 550;
-}
-
-button {
-  box-shadow: 0px 0px 10px black, 1px 1px 1em black, 0 0 0.2em black;
-}
-
-.in-text-link:hover {
-  color: #0056b3;
+@keyframes background {
+  from {
+    filter: brightness(0%);
+  }
+  to {
+    filter: brightness(50%);
+  }
 }
