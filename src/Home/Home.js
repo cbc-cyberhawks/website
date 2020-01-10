@@ -18,8 +18,8 @@ class Home extends React.Component {
         <Card className='text-center bg-dark text-white imgbox'>
           <img alt='tanner' src={picture} className='bg' />
           <Card.ImgOverlay>
-            <Card.Title>Columbia Basin College Cyberhawks</Card.Title>
-            <Card.Text>Meetings, competitions, and professional speakers.</Card.Text>
+            <Card.Title as='h1'>CBC Cyberhawks</Card.Title>
+            <Card.Text as='h3'>Meetings, competitions, and professional speakers.</Card.Text>
             <Button size='lg' href='https://discord.gg/XBgxUnc' variant='dark'>Discord</Button>
           </Card.ImgOverlay>
         </Card>
