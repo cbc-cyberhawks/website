@@ -2,7 +2,8 @@ import React from 'react';
 import { CardColumns, Card } from 'react-bootstrap';
 import './Awards.css';
 import NavbarCustom from '../NavbarCustom/NavbarCustom';
-import cyberforce from './doe-cyberforce-competition-2019_49076116333_o.jpg';
+import cyberforce2019 from './cyberforce2019.jpg';
+import prccdc2016 from './prccdc2016.jpg';
 
 class Awards extends React.Component {
   constructor (props) {
@@ -18,7 +19,7 @@ class Awards extends React.Component {
         <h1>Awards</h1>
         <CardColumns style={{ width: '82%', margin: 'auto', marginBottom: '30px' }}>
           <Card>
-            <Card.Img variant='top' src={cyberforce} />
+            <Card.Img variant='top' src={cyberforce2019} />
             <Card.Body>
               <Card.Title>Cyberforce 2019</Card.Title>
               <Card.Text>
@@ -45,6 +46,21 @@ class Awards extends React.Component {
             </Card.Body>
             <Card.Footer>
               <small className='text-muted'>University of Washington, WA</small>
+            </Card.Footer>
+          </Card>
+          <Card>
+            <Card.Img variant='top' src={prccdc2016} />
+            <Card.Body>
+              <Card.Title>PRCCDC 2016</Card.Title>
+              <Card.Text>
+                <ul>
+                  <li>Regional Champions</li>
+                  <li>National Representatives</li>
+                </ul>
+              </Card.Text>
+            </Card.Body>
+            <Card.Footer>
+              <small className='text-muted'>Highline College, WA</small>
             </Card.Footer>
           </Card>
         </CardColumns>
