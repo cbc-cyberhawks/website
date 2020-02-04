@@ -1,6 +1,6 @@
 import React from 'react';
 import './NavbarCustom.css';
-import { Navbar, Nav, NavDropdown, Button } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import discord from './Discord-Logo-White.png';
 import github from './github-icon-white-6.jpg';
@@ -41,7 +41,7 @@ function NavbarCustom ({ activeTab }) {
                 className='d-inline-block align-top'
                 src={discord}
               />
-              </Nav.Link>
+            </Nav.Link>
             : null}
           {
             !mobile
@@ -59,9 +59,6 @@ function NavbarCustom ({ activeTab }) {
             <NavDropdown.Item><Nav.Link><Link to='/home' className={activeTab === '/home' ? 'menu-active mobile' : 'menu mobile'}>Home</Link></Nav.Link></NavDropdown.Item>
             <NavDropdown.Item><Nav.Link><Link to='/competitions' className={activeTab === '/competitions' ? 'menu-active mobile' : 'menu mobile'}>Competitions</Link></Nav.Link></NavDropdown.Item>
             <NavDropdown.Item><Nav.Link><Link to='/awards' className={activeTab === '/awards' ? 'menu-active mobile' : 'menu mobile'}>Awards</Link></Nav.Link></NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item><Button href='https://discord.gg/XBgxUnc' variant='dark' block>Discord</Button></NavDropdown.Item>
-            <NavDropdown.Item><Button href='https://github.com/cbc-cyberhawks/website' variant='outline-dark' block>Github</Button></NavDropdown.Item>
           </NavDropdown>
         </Nav>
       </Navbar>
