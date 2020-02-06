@@ -2,6 +2,7 @@ import React from 'react';
 import Home from './Home/Home';
 import Competitions from './Competitions/Competitions';
 import Awards from './Awards/Awards';
+import Meetings from './Meetings/Meetings';
 import {
   BrowserRouter as Router,
   Switch,
@@ -23,6 +24,7 @@ class App extends React.Component {
           <Route exact path='/home' component={Home} />
           <Route exact path='/competitions' component={Competitions} />
           <Route exact path='/awards' component={Awards} />
+          <Route exact path='/meetings' component={Meetings} />
           <Route path='/' component={Home} />
         </Switch>
       </Router>

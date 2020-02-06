@@ -8,7 +8,7 @@ class Competitions extends React.Component {
   constructor (props) {
     super(props);
     this.state = {
-      value: 0, previous: 0
+      value: 2, previous: 1
     };
   }
 
