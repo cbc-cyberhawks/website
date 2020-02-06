@@ -16,8 +16,8 @@ class Meetings extends React.Component {
         <NavbarCustom activeTab='/meetings' />
         <h1>Meetings</h1>
         <h5 style={{ textAlign: 'center', padding: '5px' }}>Meetings occur every <b>Tuesday at 2:00pm,</b> in <b>T545.</b></h5>
-        <hr />
         <div className='notes'>
+          <hr style={{ marginBottom: '25px' }} />
           <Card>
             <Card.Header>February 4th, 2020</Card.Header>
             <Card.Body>
