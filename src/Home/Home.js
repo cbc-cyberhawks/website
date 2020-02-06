@@ -28,7 +28,7 @@ class Home extends React.Component {
             top: !mobile ? 67 : 61,
             left: 0,
             width: '100%',
-            height: !mobile ? 'calc(100% - 67px)' : 'calc(100% - 61px)'
+            height: !mobile ? 'calc(100% - 67px)' : '100%'
           }}
         >
           <Card className='text-center bg-dark text-white imgbox'>
