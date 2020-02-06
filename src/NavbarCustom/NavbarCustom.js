@@ -30,6 +30,7 @@ function NavbarCustom ({ activeTab }) {
           {!mobile ? <Nav.Link><Link to='/home' className={activeTab === '/home' ? 'menu-active' : 'menu'}>Home</Link></Nav.Link> : null}
           {!mobile ? <Nav.Link><Link to='/competitions' className={activeTab === '/competitions' ? 'menu-active' : 'menu'}>Competitions</Link></Nav.Link> : null}
           {!mobile ? <Nav.Link><Link to='/awards' className={activeTab === '/awards' ? 'menu-active' : 'menu'}>Awards</Link></Nav.Link> : null}
+          {!mobile ? <Nav.Link><Link to='/meetings' className={activeTab === '/meetings' ? 'menu-active' : 'menu'}>Meetings</Link></Nav.Link> : null}
         </Nav>
         <Nav>
           {!mobile
@@ -59,6 +60,7 @@ function NavbarCustom ({ activeTab }) {
             <NavDropdown.Item><Nav.Link><Link to='/home' className={activeTab === '/home' ? 'menu-active mobile' : 'menu mobile'}>Home</Link></Nav.Link></NavDropdown.Item>
             <NavDropdown.Item><Nav.Link><Link to='/competitions' className={activeTab === '/competitions' ? 'menu-active mobile' : 'menu mobile'}>Competitions</Link></Nav.Link></NavDropdown.Item>
             <NavDropdown.Item><Nav.Link><Link to='/awards' className={activeTab === '/awards' ? 'menu-active mobile' : 'menu mobile'}>Awards</Link></Nav.Link></NavDropdown.Item>
+            <NavDropdown.Item><Nav.Link><Link to='/meetings' className={activeTab === '/meetings' ? 'menu-active mobile' : 'menu mobile'}>Meetings</Link></Nav.Link></NavDropdown.Item>
           </NavDropdown>
         </Nav>
       </Navbar>
