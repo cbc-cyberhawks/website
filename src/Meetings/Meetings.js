@@ -15,7 +15,8 @@ class Meetings extends React.Component {
       <div className='Meetings'>
         <NavbarCustom activeTab='/meetings' />
         <h1>Meetings</h1>
-        <Card.Text as='h3'>Meetings occur every Tuesday at 2:00pm, in T545.</Card.Text>
+        <h5 style={{ textAlign: 'center', padding: '5px' }}>Meetings occur every <b>Tuesday at 2:00pm,</b> in <b>T545.</b></h5>
+        <hr />
         <div className='notes'>
           <Card>
             <Card.Header>February 4th, 2020</Card.Header>
@@ -30,6 +31,7 @@ class Meetings extends React.Component {
               </Card.Text>
             </Card.Body>
           </Card>
+          <br />
         </div>
       </div>
     );
