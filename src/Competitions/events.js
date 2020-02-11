@@ -1,5 +1,11 @@
 const EVENTS = [
   {
+    date: '10/16/2019',
+    title: 'DubHacks 2019',
+    image: 'https://dubhacks.co/assets/logo.svg',
+    description: 'DubHacks is the largest 24-hour collegiate hackathon in the Pacific Northwest, held at the University of Washington, Seattle. They advocate for the importance of diversity, inclusion, accessibility, and representation in technology by creating a platform where individuals of all backgrounds come together to develop solutions that solve society’s biggest issues.'
+  },
+  {
     date: '11/14/2019',
     title: 'CyberForce 2019',
     image: 'https://newscenter.lbl.gov/wp-content/uploads/sites/2/2018/11/cyberforce.png',
@@ -12,6 +18,12 @@ const EVENTS = [
     description: 'The National Cyber League (NCL) is a biannual cybersecurity competition for high school and college students. The competition consists of a series of challenges that allows students to demonstrate their ability to identify hackers from forensic data, break into vulnerable websites, recover from ransomware attacks, and more. Students compete in the NCL to build their skills, obtain scouting reports of their performance for hiring purposes, and to represent their school. '
   },
   {
+    date: '2/23/2020',
+    title: 'Crimson Code 2020',
+    image: 'https://hackathon.eecs.wsu.edu/img/CC2020header.svg',
+    description: 'CrimsonCode is a 24-hour collegiate hackathon held at Washington State University in Pullman, WA.'
+  },
+  {
     date: '3/22/2020',
     title: 'PRCCDC 2020',
     image: 'http://prccdc.org/wp-content/uploads/2018/11/PRCCDC_Logo_Horizontal_Tshirt.png',
@@ -22,6 +34,12 @@ const EVENTS = [
     title: 'NCL Spring Season',
     image: 'https://images.squarespace-cdn.com/content/v1/5985f3ae4c0dbf14605d1cbf/1551053165969-099WFZHETE3APD91NKQA/ke17ZwdGBToddI8pDm48kPc8mGVWskAgI_oi-G-ZLJMUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKczwiloYVjix-sfjCfaqeXbTlqBLsEl9No1zDAgeEEVKyO5yjtcqk6mTgHEhucA7dt/ncl_with_text.png',
     description: 'The National Cyber League (NCL) is a biannual cybersecurity competition for high school and college students. The competition consists of a series of challenges that allows students to demonstrate their ability to identify hackers from forensic data, break into vulnerable websites, recover from ransomware attacks, and more. Students compete in the NCL to build their skills, obtain scouting reports of their performance for hiring purposes, and to represent their school. '
+  },
+  {
+    date: '10/16/2020',
+    title: 'DubHacks 2020',
+    image: 'https://dubhacks.co/assets/logo.svg',
+    description: 'DubHacks is the largest 24-hour collegiate hackathon in the Pacific Northwest, held at the University of Washington, Seattle. They advocate for the importance of diversity, inclusion, accessibility, and representation in technology by creating a platform where individuals of all backgrounds come together to develop solutions that solve society’s biggest issues.'
   },
   {
     date: '11/16/2020',

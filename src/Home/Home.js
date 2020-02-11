@@ -23,7 +23,7 @@ class Home extends React.Component {
         <div
           className='particles-container'
           style={{
-            background: !mobile ? 'linear-gradient(90deg, #343a40 0%, rgb(0, 0, 0) 100%)' : 'linear-gradient(180deg, #343a40 0%, rgb(0, 0, 0) 30%)',
+            background: !mobile ? 'linear-gradient(90deg, #343a40 0%, rgb(0, 0, 0) 100%)' : 'linear-gradient(180deg, #343a40 0%, rgb(0, 0, 0) 100%)',
             position: 'absolute',
             top: !mobile ? 67 : 61,
             left: 0,
@@ -35,7 +35,7 @@ class Home extends React.Component {
             <Card.ImgOverlay>
               <Card.Title as='h1'>CBC Cyberhawks</Card.Title>
               <Card.Text as='h3'>Meetings, competitions, and professional speakers.</Card.Text>
-              <Button size='lg' href='https://discord.gg/XBgxUnc' variant='dark'>Discord</Button>
+              <Button size='lg' href='https://discord.gg/XBgxUnc' variant='dark' style={{ marginBottom: '10%' }}>Discord</Button>
             </Card.ImgOverlay>
           </Card>
           <Particles
